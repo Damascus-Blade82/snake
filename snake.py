@@ -12,9 +12,10 @@ def check_snake():
             run = False
         i = i + 1
 
-def draw_MENU():
-    screen.fill(MENU1)
-    # screen.blit()
+def draw_menu():
+    screen.fill((40, 40, 190))
+    screen.blit(TEXT_menu, (230, 100))
+
 
 
 
@@ -153,14 +154,11 @@ while run:
         if event.type == pygame.QUIT:
             run = False
     if FLAG_MENU == True:
-        draw_MENU()
+        draw_menu()
     else:
 
         # Логика (соблюдайте отступ!)
 
-        def draw_menu():
-            screen.fill((40, 40, 190))
-            screen.blit(TEXT_menu, (230, 100))
 
         move_snake()
 
